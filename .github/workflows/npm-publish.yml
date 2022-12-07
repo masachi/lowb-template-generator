@@ -18,11 +18,11 @@ jobs:
         with:
           node-version: 14
       - name: Install Dependencies
-          working-directory: .
-          run: npm install
+        working-directory: .
+        run: npm install
       - name: Build
-          working-directory: .
-          run: npm run build
+        working-directory: .
+        run: npm run build
 
   publish-npm:
     needs: build
