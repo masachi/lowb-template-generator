@@ -1,6 +1,6 @@
 {
   "name": "lowb-cli",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "description": "A simple CLI for scaffolding lowb projects",
   "main": "dist/lowb.js",
   "scripts": {
@@ -32,8 +32,7 @@
     "mkdirp": "^1.0.4",
     "ora": "^6.1.2",
     "readline": "^1.3.0",
-    "rimraf": "^3.0.2",
-    "yunle-cli": "^1.0.16"
+    "rimraf": "^3.0.2"
   },
   "devDependencies": {
     "@types/inquirer": "^9.0.3",
