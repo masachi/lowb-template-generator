@@ -5,13 +5,13 @@
 Prerequisites: Node.js (>=14.x) and Git.
 
 ```
-$ npm install -g lowb.ts-cli
+$ npm install -g lowb-cli
 ```
 
 ## Usage
 
 ```
-$ lowb.ts init <project-name>
+$ lowb init <project-name>
 
 ```
 
