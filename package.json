@@ -2,7 +2,7 @@
   "name": "lowb-cli",
   "version": "0.0.1",
   "description": "A simple CLI for scaffolding lowb projects",
-  "main": "dist/lowb.js",
+  "main": "dist/bin/lowb.js",
   "scripts": {
     "test": "mocha",
     "build": "tsc"
@@ -17,8 +17,8 @@
   "author": "masachi",
   "license": "MIT",
   "bin": {
-    "lowb": "dist/lowb.js",
-    "lowb-init": "dist/lowb-init.js"
+    "lowb": "dist/bin/lowb.js",
+    "lowb-init": "dist/bin/lowb-init.js"
   },
   "repository": "git+https://github.com/masachi/lowb-template-generator.git",
   "bugs": {
