@@ -1,0 +1,59 @@
+{
+  "name": "lowb-cli",
+  "version": "0.1.0",
+  "description": "A simple CLI for scaffolding lowb projects",
+  "main": "dist/lowb.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "lowbTemplates": [
+    {
+      "name": "umi",
+      "info": "umi + react"
+    }
+  ],
+  "author": "masachi",
+  "license": "MIT",
+  "bin": {
+    "lowb": "dist/lowb.js",
+    "lowb-init": "dist/lowb-init.js"
+  },
+  "repository": "git+https://github.com/masachi/lowb-template-generator.git",
+  "bugs": {
+    "url": "https://github.com/masachi/lowb-template-generator/issues"
+  },
+  "homepage": "https://github.com/masachi/lowb-template-generator#readme",
+  "dependencies": {
+    "commander": "^9.4.1",
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^9.1.4",
+    "mkdirp": "^1.0.4",
+    "ora": "^6.1.2",
+    "readline": "^1.3.0",
+    "rimraf": "^3.0.2",
+    "yunle-cli": "^1.0.16"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/node": "^18.11.11",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "chai": "^4.3.7",
+    "eslint": "^8.29.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "mocha": "^10.1.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
