@@ -18,8 +18,7 @@ $ lowb init <project-name>
 ### Example:
 
 ```
-$ lowb.ts init my-project
+$ lowb init my-project
 
-$ > react
-    node
+$ > umi-react
 ```
