@@ -1,7 +1,7 @@
 // a fork from sindresorhus
 // https://github.com/sindresorhus/log-symbols/blob/master/index.js
 
-import chalk from 'chalk';
+const chalk = require('chalk');
 
 const isSupported =
     process.platform !== 'win32' ||
