@@ -1,6 +1,6 @@
 {
   "name": "lowb-cli",
-  "version": "0.0.2-beta",
+  "version": "0.0.3-alpha",
   "description": "A simple CLI for scaffolding lowb projects",
   "main": "dist/bin/lowb.js",
   "scripts": {

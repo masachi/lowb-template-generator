@@ -93,10 +93,11 @@ function createApplication(template: string, app_name: any, path: string) {
  */
 
 function mkdir(path: string, fn: any) {
-  mkdirp(path, 755, (err: any) => {
-    if (err) throw err;
-    console.log('   \033[36mcreate\033[0m : ' + path);
+  mkdirp(path, {mode: 0o755}).then((path: string | null) => {
+    console.log('   \033[36m创建目录\033[0m : ' + path);
     fn && fn();
+  }).catch((error: any) => {
+    throw error;
   });
 }
 
@@ -108,13 +109,13 @@ function mkdir(path: string, fn: any) {
  */
 
 function downloadAndGenerate (template: string, path: any) {
-  const spinner = ora('downloading template');
+  const spinner = ora('下载模板ING');
   spinner.start();
   download('masachi/umi-template', path, { clone: clone }, (err: any) => {
     spinner.stop();
     if (err) console.error('未能下载模板' + template + ': ' + err.message.trim());
     console.log();
-    console.log('Generated "%s".', projectName);
+    console.log('创建完成 "%s".', projectName);
     console.log();
   });
 }
