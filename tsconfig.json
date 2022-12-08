@@ -12,7 +12,8 @@
     "outDir": "./dist",
     "paths": {
       "@/*": ["*"]
-    }
+    },
+    "newLine": "CRLF",
   },
   "include": ["src"],
   "exclude": ["node_modules"]
