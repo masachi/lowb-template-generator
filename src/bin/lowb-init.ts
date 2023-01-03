@@ -111,7 +111,7 @@ function mkdir(path: string, fn: any) {
 function downloadAndGenerate (template: string, path: any) {
   const spinner = ora('下载模板ING');
   spinner.start();
-  download('masachi/umi-template', path, { clone: clone }, (err: any) => {
+  download('masachi/umi-template#template', path, { clone: clone }, (err: any) => {
     spinner.stop();
     if (err) console.error('未能下载模板' + template + ': ' + err.message.trim());
     console.log();
